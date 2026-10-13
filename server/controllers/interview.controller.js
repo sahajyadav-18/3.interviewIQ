@@ -214,7 +214,7 @@ Make questions based on the candidate’s role, experience,interviewMode, projec
 
     res.json({
       interviewId: interview._id,
-      creditsLeft: "Unlimited",
+      creditLeft: "Unlimited",
       userName: user.name,
       questions: interview.questions
     });
