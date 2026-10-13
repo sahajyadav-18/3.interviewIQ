@@ -196,8 +196,8 @@ Make questions based on the candidate’s role, experience,interviewMode, projec
     }
 
    
-   /* user.credits -= 50;
-    await user.save(); */
+    /* user.credits -= 50;
+     await user.save(); */
 
     const interview = await Interview.create({
       userId: user._id,
