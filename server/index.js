@@ -14,12 +14,19 @@ dotenv.config();
 const app = express();
 
 // CORS
-app.use(
-    cors({
-        origin: "http://localhost:5173",
-        credentials: true,
-    })
-);
+// app.use(
+//     cors({
+//         origin: "http://localhost:5173",
+//         credentials: true,
+//     })
+// );
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://3-interview-iq-phi.vercel.app"
+  ],
+  credentials: true
+}));
 
 // Middleware
 app.use(express.json());
